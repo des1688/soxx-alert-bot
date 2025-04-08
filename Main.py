@@ -3,8 +3,10 @@ import schedule
 import time
 
 # Bot setup
-BOT_TOKEN = '7614359150:YOUR_FULL_BOT_TOKEN'
-CHAT_ID = '897667750'
+import os
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
 
 # SOXX monitoring function
 def check_soxx():
